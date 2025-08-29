@@ -1577,18 +1577,18 @@ input, select, textarea {
 	.box .image.featured {
 		position: relative;
 		width: 100%;
-		left: 0;
-		top: 0;
-		margin: 0 auto 2em auto;
-		display: block;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 0 auto 2em auto !important;
+		display: block !important;
 	}
 	
 	.box .image.featured img {
 		max-height: 400px;
 		max-width: 100%;
 		width: auto;
-		display: block;
-		margin: 0 auto;
+		display: block !important;
+		margin: 0 auto !important;
 	}
 
 		.box.post header {
