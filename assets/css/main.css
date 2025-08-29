@@ -1584,6 +1584,7 @@ input, select, textarea {
 	
 	.box .image.featured img {
 		max-height: 400px;
+		max-width: 100%;
 		width: auto;
 		display: block;
 		margin: 0 auto;
