@@ -2964,3 +2964,16 @@ input, select, textarea {
 		.about-us-paragraph {
 			margin-bottom: 0;
 		}
+
+		.featured-image {
+			width: 100%;
+			max-width: 400px;
+			border-radius: 12px;
+			display: block;
+			margin: 0 auto 1rem;
+			transition: transform 0.3s ease;
+		}
+
+		.featured-image:hover {
+			transform: scale(1.03);
+		}
