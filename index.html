@@ -17,6 +17,8 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="The Prawn Don" />
 		<link rel="manifest" href="/favicons/site.webmanifest" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -64,19 +66,61 @@
 								</li>
 									
 								<li><a href="recommended-gear.html">Recommended Gear</a></li>
+								<li><a href="guides.html">Guides</a></li>
 								<li><a href="shop.html">Shop</a></li>
 								<li><a href="about-us.html">About Us</a></li>
 							</ul>
 						</nav>
 
 					<!-- Banner -->
+						<!--Banner Slide 1-->
 						<section id="banner">
-							<header>
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image: url('images/ThePrawnDon.png');">
+										<div class="overlay">
+											<div class="overylay-top">
+												<h2> Welcome to The Prawn Don</h2>
+											</div>
+											<div class="overlay-bottom">	
+												<p>Dive into a world dedicated to freshwater fauna, aquascaping, and aquarium mastery. Whether you are a beginner or a seasoned breeder, you are in the right place! </p>
+												<a href="about-us.html" class="button primary">Learn About Us</a>
+											</div>
+										</div>
+									</div>
 
-								<img src="images/ThePrawnDon.png" alt="The Prawn Don logo">
-								<p>Don't Just Get It Done. Get It Don!</p>
-							</header>
-						</section>
+						<!--Banner Slide 2 (need to add a new guides button to nav)-->
+									<div class="swiper-slide" style="background-image: url('images/carousel/knowledge.jpg');">
+										<div class="overlay">
+							  			<h2>Your Aquarium Knowledge Hub</h2>
+							  			<p>From breeding guides to aquascaping tips, find reliable, experience and science-backed information to help your aquatic world thrive.</p>
+							  			<a href="guides.html" class="button primary">Start Learning</a>
+										</div>
+						  			</div>
+
+						<!--Banner Slide 3-->
+									<div class="swiper-slide" style="background-image: url('images/carousel/dream-tank.jpg');">
+										<div class="overlay">
+							  			<h2>Create a Thriving Aquarium</h2>
+							 			 <p>Explore inspiration, tools, and resources to bring your vision to life — from rare shrimp to lush aquascapes.</p>
+							 			 <a href="recommended-gear.html" class="button primary">Explore Gear</a>
+										</div>
+						  			</div>
+							</div>
+
+							<!--Navigation Arrows-->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+							<!--Pagination Dots-->
+							<div class="swiper-pagination"></div>
+					</div>
+
+								
+
+								
+							
+				</section>
 
 					<!-- Intro -->
 						<section id="intro" class="container">
@@ -106,23 +150,23 @@
 								<div class="col-12">
 									<section class="middle">
 										<a href="vertebrates.html">
-											<i class="icon solid featured alt fa-bolt"></i>
+											<img src="images/vertebrates-card.png" alt="vertebrates" class="featured-image">
 											<header>
 												<h2>Vertebrates</h2>
 											</header>
 									</a>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+										<p>Dive into the world of aquarium fish - discover their care and role in your aquatic setup.</p>
 									</section>
 								</div>
 								<div class="col-12">
 									<section class="last">
 										<a href="plants.html">
-											<i class="icon solid featured alt2 fa-star"></i>
+											<img src="images/plants-card.png" alt="plantss" class="featured-image">
 											<header>
 												<h2>Plants</h2>
 											</header>
 										</a>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+										<p>From lush carpets to vibrant stems, discover plants that bring balance and beauty to your tank.</p>
 									</section>
 								</div>
 							</div>
@@ -140,7 +184,7 @@
 								<!-- Portfolio -->
 									<section>
 										<header class="major">
-											<h2>My Portfolio</h2>
+											<h2>Explore Guides</h2>
 										</header>
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
@@ -236,7 +280,7 @@
 								<!-- Blog -->
 									<section>
 										<header class="major">
-											<h2>The Blog</h2>
+											<h2>Recent Guides</h2>
 										</header>
 										<div class="row">
 											<div class="col-6 col-12-small">
@@ -316,25 +360,7 @@
 										</li>
 									</ul>
 								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>What's this all about?</h2>
-									</header>
-									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-									<p>
-										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-									</p>
-									<footer>
-										<ul class="actions">
-											<li><a href="#" class="button">Find out more</a></li>
-										</ul>
-									</footer>
-								</section>
-							</div>
+							
 							<div class="col-4 col-6-medium col-12-small">
 								<section>
 									<header>
@@ -381,18 +407,17 @@
 										<li>
 											<h3>Address</h3>
 											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
+												Chelsea Manhattan<br />
+												New York, NY 10011
 											</p>
 										</li>
 										<li>
 											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
+											<p><a href="#">theprawndon@gmail.com</a></p>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
+											<p>(479) 319-1687</p>
 										</li>
 									</ul>
 								</section>
@@ -402,7 +427,7 @@
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>&copy; Untitled. All rights reserved.</li>
 										</ul>
 									</div>
 
@@ -420,6 +445,53 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!--Swiper Initialization Script-->
+		<script>
+			const swiper = new Swiper('.swiper', {
+			  loop: true,
+			  autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			  effect: 'fade',
+			  speed: 800
+			});
+		  </script>
+
+
+			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+			<script>
+			document.addEventListener('DOMContentLoaded', function() {
+  			const swiper = new Swiper('.swiper', {
+    			loop: true, // Enables continuous loop mode
+    			autoplay: {
+      			delay: 5000, // Switch slides every 5 seconds
+      			disableOnInteraction: false, // Keep autoplay even if user interacts
+    			},
+    			pagination: {
+      			el: '.swiper-pagination',
+      			clickable: true,
+    			},
+    			navigation: {
+      			nextEl: '.swiper-button-next',
+      			prevEl: '.swiper-button-prev',
+    			},
+    			effect: 'slide', // Use "slide" until autoplay is working
+    			speed: 800,
+  			});
+			});
+			</script>
+
 
 	</body>
 </html>

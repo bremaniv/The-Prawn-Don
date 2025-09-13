@@ -83,8 +83,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #252122;
-		background-image: url("images/bg02.png");
+		background: #ffffff;
+		background-image: url("images/snowflake.jpg");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2652,8 +2652,8 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				color: #858484;
-				background-image: url("images/bg02.png");
+				color: #ffffff;
+				background-image: url("images/snowflake.jpg");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
@@ -2976,4 +2976,245 @@ input, select, textarea {
 
 		.featured-image:hover {
 			transform: scale(1.03);
+		}
+
+		/* intro */
+		#intro .row{
+			margin: top 0;
+			margin-left: 0;
+		}
+
+		#intro .row > .col-12 {
+			padding-top: 0;
+			padding-left: 0;
+		}
+
+		/* Swiper Banner */
+		.swiper {
+			width: 100%;
+			height: 500px !important;               /* adjust as needed */
+			position: relative;
+			overflow: hidden;                       /* keep slides from overflowing */
+			box-sizing: border-box;
+		  }
+		  
+		  /* Make the slide a simple container (no flex on the slide itself) */
+		  .swiper-slide {
+			position: relative;
+			height: 70vh; /* Dynamic height */
+			min-height: 400px;
+			max-height: 600px;
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			box-sizing: border-box;
+		  }
+
+		  .swiper-slide::before{
+			content: "";
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  			background: rgba(0, 0, 0, 0.2); /* darkens the slide for readability */
+  			z-index: 1;
+		  }
+		  
+		  /* Overlay spans the whole slide and handles the layout */
+		  .swiper-slide .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between; /* Keeps top & bottom sections separated */
+			align-items: center;
+			padding: 24px 16px;
+			text-align: center;
+			color: #ffffff;
+			box-sizing: border-box;
+		  }
+		  
+		  /* allow interactive items inside overlay to be clickable */
+		  .swiper-slide .overlay .button,
+		  .swiper-slide .overlay a {
+			pointer-events: auto;                   /* enable clicks for buttons/links */
+			z-index: 3;
+		  }
+		  
+		  /* Top area (heading) */
+		  .overlay-top {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			margin-top: 6px;                        /* small offset from the very top */
+		  }
+		  
+		  /* Bottom area (paragraph + button) */
+		  .overlay-bottom {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+		  }
+		  
+		  /* Heading styles */
+		  .swiper-slide .overlay h2 {
+			font-size: 2.25rem;
+			line-height: 1.05;
+			margin: 0;
+			text-shadow: 0 6px 18px rgba(0,0,0,0.35);
+			max-width: 95%;
+		  }
+		  
+		  /* Paragraph styles */
+		  .swiper-slide .overlay p {
+			font-size: 1.05rem;
+			margin: 0;
+			line-height: 1.5;
+			max-width: 880px;                       /* limit line length for readability */
+			padding: 0 12px;
+			text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+		  }
+		  
+		  /* Button */
+		  .swiper-slide .overlay .button {
+			background: #d52349;
+			color: #fff;
+			padding: 10px 22px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: 700;
+			display: inline-block;
+			position: relative;
+			z-index: 10;
+		  }
+		  
+		  /* Nav / pagination colors */
+		  .swiper-button-next,
+		  .swiper-button-prev {
+			color: #d52349;
+			z-index: 10;
+		  }
+		  
+		  .swiper-pagination-bullet-active {
+			background: #d52349;
+		  }
+		  
+		  /* Responsive tweaks */
+		  @media (max-width: 1024px) {
+			.swiper { height: 420px !important; }
+			.swiper-slide .overlay h2 { font-size: 1.9rem; }
+			.swiper-slide .overlay p { font-size: 1rem; }
+		  }
+		  
+		  @media (max-width: 768px) {
+			.swiper { height: 360px !important; }
+			.swiper-slide .overlay h2 { font-size: 1.6rem; }
+			.swiper-slide .overlay p { font-size: 0.95rem; max-width: 92%; }
+			.swiper-slide .overlay { padding: 24px 14px; }
+			.overlay-bottom { gap: 10px; }
+		  }
+		  
+		  @media (max-width: 480px) {
+			.swiper { height: 320px !important; }
+			.swiper-slide .overlay h2 { font-size: 1.3rem; }
+			.swiper-slide .overlay p { font-size: 0.9rem; }
+			.swiper-slide .overlay .button { padding: 8px 16px; }
+		  }
+
+
+		  /* banner resizing for different screens */
+		  @media (max-width: 768px) {
+			.swiper-slide {
+			  height: 60vh;
+			  min-height: 350px;
+			}
+		  
+			.overlay-top h2 {
+				font-size: 2.4rem;
+				font-weight: 600;
+				margin: 0;
+				text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+			  }
+		  
+			  .overlay-bottom p {
+				font-size: 1.1rem;
+				max-width: 80%;
+				margin: 0 auto;
+				line-height: 1.5;
+				text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+			  }
+		  
+			  .overlay-bottom .button {
+				background: #ff6600;
+				color: #fff;
+				font-size: 1rem;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 6px;
+				text-decoration: none;
+				transition: background 0.3s ease;
+			  }
+		  }
+		  
+		  /* Mobile screens (<= 480px) */
+		  @media (max-width: 480px) {
+			.swiper-slide {
+			  height: 50vh;
+			  min-height: 320px;
+			}
+		  
+			.overlay-top h2 {
+			  font-size: 1.4rem;
+			}
+		  
+			.overlay-bottom p {
+			  font-size: 0.9rem;
+			}
+		  
+			.overlay-bottom .button {
+			  font-size: 0.8rem;
+			  padding: 6px 14px;
+			}
+
+			.overlay-bottom .button:hover {
+				background: #ff4400;
+			  }
+		  }
+		  
+
+		  
+		  /* Navigation & Pagination */
+		  .swiper-button-next,
+		  .swiper-button-prev {
+			color: #d52349;
+		  }
+		  
+		  .swiper-pagination-bullet-active {
+			background: #d52349;
+		  }
+
+
+		/* Banner Background rules*/
+		body,
+		#page-wrapper {
+    		background: #fdf5e6 !important;
+		}
+
+		#header {
+    		background: transparent !important;
+		}
+
+		#banner {
+    		background: transparent !important;
 		}
